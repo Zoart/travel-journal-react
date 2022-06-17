@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kalam', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.root {
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  padding: .5em 0;
+  font-size: 1.7em;
+  background-color: rgb(37, 227, 37);
+  letter-spacing: .9em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header__image {
+  width: 2.2em;
+  margin-right: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header__title {
+  text-align: center;
+  font-weight: 500;
+}
+
+.cards {
+  margin: 3em auto 0 ;
+}
+
+
+
+.card__wrapper {
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: center;
+}
+
+.card__image {
+  width: 15em;
+  height: 20em;
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+.card__description-space {
+  margin: auto 0 auto 2.5em;
+  width: 35%;
+  
+}
+
+.card__about-location {
+  display: flex;
+  /* margin-top: 1.7em; */
+}
+
+.card-location-image {
+  margin-right: 1em;
+  width: 13px;
+  height: 28px;
+}
+
+.card__location {
+  padding: 0 1em 0 0;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 1.5em;
+}
+
+.card__place-link {
+  color: black;
+  font-size: 1.5em;
+}
+
+.card__place-name {
+  margin-top: .1em;
+  font-size: 3.5em;
+}
+
+.card__description {
+  margin-top: 2.5em;
+  font-size: 18px;
 }
